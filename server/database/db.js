@@ -3,12 +3,12 @@ import dotenv from "dotenv";
 
 dotenv.config();
 
-const USERNAME = process.env.DB_USERNAME
-const PASSWORD = process.env.DB_PASSWORD
+const USERNAME = process.env.DB_USERNAME;
+const PASSWORD = process.env.DB_PASSWORD;
 
-export const Connection = () => {
+const Connection = () => {
 
-    const MONGODB_URL = `mongodb+srv://${USERNAME}:${PASSWORD}@gabhishek01.dq23z80.mongodb.net/todoList`
+    const MONGODB_URL = `mongodb+srv://gabhishekraoo:Gabhishekraoo@abhiscluster.ms6f7ef.mongodb.net/todoList`
 
     mongoose.connect(MONGODB_URL, {useNewUrlParser: true});
 
